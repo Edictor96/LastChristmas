@@ -13,34 +13,24 @@ function Theater() {
             <video
               controls
               className="w-full rounded-2xl"
-              onError={(e) => {
-                e.target.style.display = 'none';
-                e.target.nextElementSibling.style.display = 'flex';
-              }}
             >
               <source src="/videos/VID20251122200919.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
+              <div className="flex items-center justify-center h-64 bg-gray-100 rounded-2xl">
+                <p className="text-gray-500">Video will be available soon</p>
+              </div>
             </video>
-            <div className="hidden items-center justify-center h-64 bg-gray-100 rounded-2xl">
-              <p className="text-gray-500">Video will be available soon</p>
-            </div>
           </div>
 
           <div className="bg-white/70 backdrop-blur-sm rounded-3xl p-4 shadow-lg hover:shadow-xl transition-shadow">
             <video
               controls
               className="w-full rounded-2xl"
-              onError={(e) => {
-                e.target.style.display = 'none';
-                e.target.nextElementSibling.style.display = 'flex';
-              }}
             >
               <source src="/videos/VID_20251224161733.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
+              <div className="flex items-center justify-center h-64 bg-gray-100 rounded-2xl">
+                <p className="text-gray-500">Video will be available soon</p>
+              </div>
             </video>
-            <div className="hidden items-center justify-center h-64 bg-gray-100 rounded-2xl">
-              <p className="text-gray-500">Video will be available soon</p>
-            </div>
           </div>
         </div>
 

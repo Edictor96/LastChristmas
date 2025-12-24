@@ -13,17 +13,10 @@ function Confession() {
               autoPlay
               controls
               className="w-full rounded-2xl"
-              onError={(e) => {
-                e.target.style.display = 'none';
-                e.target.nextElementSibling.style.display = 'flex';
-              }}
             >
               <source src="/videos/VID_20251224161733.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
+              Video will be available soon
             </video>
-            <div className="hidden items-center justify-center h-64 bg-gray-100 rounded-2xl">
-              <p className="text-gray-500">Video will be available soon</p>
-            </div>
           </div>
         )}
 

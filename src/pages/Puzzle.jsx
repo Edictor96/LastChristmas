@@ -103,7 +103,7 @@ function Puzzle() {
                       ${getValidMoves(emptyIndex).includes(index) && tile !== 8 ? 'ring-2 ring-red-300' : ''}
                     `}
                     style={{
-                      backgroundImage: tile !== 8 ? `url('/images/couple.png')` : 'none',
+                      backgroundImage: tile !== 8 ? `url('/images/couple.png'), url('/images/couple.svg')` : 'none',
                       backgroundSize: '300%',
                       backgroundPosition: `${(tile % 3) * 50}% ${Math.floor(tile / 3) * 50}%`,
                     }}
@@ -131,13 +131,9 @@ function Puzzle() {
               controls
               onEnded={handleVideoEnd}
               className="w-full rounded-2xl"
-              onError={(e) => {
-                e.target.style.display = 'none';
-                setShowMessage(true);
-              }}
             >
               <source src="/videos/VID_20251224161733.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
+              Video will be available soon
             </video>
           </div>
         )}
