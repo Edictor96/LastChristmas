@@ -130,6 +130,7 @@ function Puzzle() {
               autoPlay
               controls
               onEnded={handleVideoEnd}
+              onError={() => setShowMessage(true)}
               className="w-full rounded-2xl"
             >
               <source src="/videos/VID_20251224161733.mp4" type="video/mp4" />
