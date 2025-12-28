@@ -8,29 +8,50 @@ function Theater() {
           Our Theater
         </h2>
         
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="bg-white/70 backdrop-blur-sm rounded-3xl p-4 shadow-lg hover:shadow-xl transition-shadow">
-            <video
-              controls
-              className="w-full rounded-2xl"
-            >
-              <source src="/videos/VID20251122200919.mp4" type="video/mp4" />
-              <div className="flex items-center justify-center h-64 bg-gray-100 rounded-2xl">
-                <p className="text-gray-500">Video will be available soon</p>
-              </div>
-            </video>
+            <img
+              src="/images/image1.jpg"
+              alt="Memory 1"
+              className="w-full rounded-2xl object-cover"
+              onError={(e) => {
+                e.target.style.display = 'none';
+                e.target.nextElementSibling.style.display = 'flex';
+              }}
+            />
+            <div className="hidden items-center justify-center h-64 bg-gray-100 rounded-2xl">
+              <p className="text-gray-500">Image will be available soon</p>
+            </div>
           </div>
 
           <div className="bg-white/70 backdrop-blur-sm rounded-3xl p-4 shadow-lg hover:shadow-xl transition-shadow">
-            <video
-              controls
-              className="w-full rounded-2xl"
-            >
-              <source src="/videos/VID_20251224161733.mp4" type="video/mp4" />
-              <div className="flex items-center justify-center h-64 bg-gray-100 rounded-2xl">
-                <p className="text-gray-500">Video will be available soon</p>
-              </div>
-            </video>
+            <img
+              src="/images/image2.jpg"
+              alt="Memory 2"
+              className="w-full rounded-2xl object-cover"
+              onError={(e) => {
+                e.target.style.display = 'none';
+                e.target.nextElementSibling.style.display = 'flex';
+              }}
+            />
+            <div className="hidden items-center justify-center h-64 bg-gray-100 rounded-2xl">
+              <p className="text-gray-500">Image will be available soon</p>
+            </div>
+          </div>
+
+          <div className="bg-white/70 backdrop-blur-sm rounded-3xl p-4 shadow-lg hover:shadow-xl transition-shadow">
+            <img
+              src="/images/image3.jpg"
+              alt="Memory 3"
+              className="w-full rounded-2xl object-cover"
+              onError={(e) => {
+                e.target.style.display = 'none';
+                e.target.nextElementSibling.style.display = 'flex';
+              }}
+            />
+            <div className="hidden items-center justify-center h-64 bg-gray-100 rounded-2xl">
+              <p className="text-gray-500">Image will be available soon</p>
+            </div>
           </div>
         </div>
 
